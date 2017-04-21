@@ -4,7 +4,7 @@
 
 Run ```npm install``` in root folder and client folder.
 
-## How to do generated Blinx application
+## Blinx application
 To transpile the code use command
 Run below commands in client folder
 ```
@@ -16,6 +16,7 @@ To keep transpilation process running in watch mode, use command
   npm run dev:watch
 ```
 
+## Restway and start server
 To start application
 ```
   NODE_ENV=stagech; npm run server-start
