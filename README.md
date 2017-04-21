@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Run below npm install in root folder and client folder.
+Run ```npm install``` in root folder and client folder.
 
 ## How to do generated Blinx application
 To transpile the code use command
