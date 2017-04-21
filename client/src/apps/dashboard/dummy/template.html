@@ -1,0 +1,33 @@
+<div class="notificationCard-default">
+    <h1>Notifications ({{viewData.notifications.length}})</h1>
+    {{#each viewData.notifications}}
+    <div class="notification-card-cont status-unread"
+         data-id="{{notificationDetailId}}"
+         data-link="{{requestJson.customPayload.url}}">
+        <div class="notification-icon" style="background-position: {{backgroundPos}}"></div>
+        <div class="notification-content">
+            <div class="notification-time">
+            </div>
+            <div class="notification-title">
+                {{requestJson.title}}
+            </div>
+            <div class="notification-mark" data-title="Mark as Read" data-trigger="hover" data-container="body" data-animation="true" data-width="100px"></div>
+            {{#if enableShowmore}}
+            <div class="notification-desc notification-less-content">
+                {{requestJson.notificationFragmentLess}}
+                <span class="notification-show-more">..show more</span>
+            </div>
+            <div class="notification-desc notification-more-content hide">
+                {{requestJson.notificationFragment}}
+                <span class="notification-show-less">show less</span>
+            </div>
+            {{/if}}
+            {{#unless enableShowmore}}
+            <div class="notification-desc">
+                {{requestJson.notificationFragment}}
+            </div>
+            {{/unless}}
+        </div>
+    </div>
+    {{/each}}
+</div>

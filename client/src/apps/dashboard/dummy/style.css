@@ -1,0 +1,75 @@
+.notificationCard-default .notification-card-cont {
+  padding: 13px 20px;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(2, 124, 213, .1)
+}
+
+.notificationCard-default .notification-card-cont .notification-icon {
+  width: 40px;
+  float: left;
+  background: url(https://img1a.flixcart.com/fk-sp-static/images/homepage_sprite_v6.png) no-repeat -59px -117px;
+  min-height: 41px
+}
+
+.notificationCard-default .notification-card-cont .notification-content {
+  margin-left: 56px
+}
+
+.notificationCard-default .notification-card-cont .notification-content .notification-title {
+  height: 20px;
+  font-family: Arial MT;
+  font-size: 15px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+  line-height: 1.33;
+  color: #3f3f3f
+}
+
+.notificationCard-default .notification-card-cont .notification-content .notification-desc {
+  padding-right: 45px;
+  font-family: Arial MT;
+  font-size: 13px;
+  line-height: 1.54;
+  color: #5f5f5f
+}
+
+.notificationCard-default .notification-card-cont .notification-content .notification-desc .notification-show-less, .notificationCard-default .notification-card-cont .notification-content .notification-desc .notification-show-more {
+  color: #027cd5;
+  cursor: pointer
+}
+
+.notificationCard-default .notification-card-cont .notification-content .notification-mark {
+  display: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  background: url(https://img1a.flixcart.com/fk-sp-static/images/homepage_sprite_v6.png) no-repeat -110px -142px
+}
+
+.notificationCard-default .notification-card-cont .notification-content .notification-mark + .tooltip {
+  white-space: nowrap;
+  z-index: 2
+}
+
+.notificationCard-default .notification-card-cont .notification-content .notification-time {
+  height: 21px;
+  font-family: Arial MT;
+  font-size: 11px;
+  line-height: 1.91;
+  float: right;
+  color: #6f6f6f
+}
+
+.notificationCard-default .notification-card-cont.status-unread {
+  background-color: rgba(2, 124, 213, .1)
+}
+
+.notificationCard-default .notification-card-cont.status-unread:hover .notification-mark {
+  display: block
+}
